@@ -1,6 +1,5 @@
 "use client";
 
-import NavBar from "@/components/NavBar";
 import React from "react";
 // import MainSection from "@/components/MainSection";
 // import About from "@/components/About";
@@ -11,7 +10,6 @@ import React from "react";
 const HomePage = () => {
     return (
         <>
-        <NavBar />
             {/* <MainSection />
             <About />
             <EventsSection />

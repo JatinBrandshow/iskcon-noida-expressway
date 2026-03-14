@@ -42,6 +42,21 @@ body {
         white-space: nowrap;
     }
 
+    /* Floating Button Animation */
+    @keyframes float-bounce {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+
+    .animate-float {
+        animation: float-bounce 3s ease-in-out infinite;
+    }
+
     .bg-temple-gradient {
         background: linear-gradient(135deg, #1a0505, #5c0a0a);
     }
