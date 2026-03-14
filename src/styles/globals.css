@@ -26,6 +26,26 @@ body {
 }
 
 @layer utilities {
+    /* Ticker Animation */
+    @keyframes ticker {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .animate-ticker {
+        animation: ticker 35s linear infinite;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .bg-temple-gradient {
+        background: linear-gradient(135deg, #1a0505, #5c0a0a);
+    }
+
     /* Background Colors */
     .bg-primary {
         background-color: #5c0a0a; /* Deep Maroon */
