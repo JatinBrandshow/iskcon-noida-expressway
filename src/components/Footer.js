@@ -6,6 +6,11 @@ const Footer = () => {
                 <div className="max-w-325 mx-auto mb-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.5fr] gap-9">
                     {/* BRAND */}
                     <div>
+                        <img
+                            src="https://iskconnoidaexpressway.com/wp-content/uploads/2020/12/ISKCON-NOIDA-Expressway-logo.png"
+                            alt="logo"
+                            className="h-16 invert sepia saturate-[4] hue-rotate-[5deg] brightness-125"
+                        />
                         <p className="text-[rgba(255,248,231,0.55)] text-[13px] leading-[1.7] mb-5">
                             श्रील प्रभुपाद जी की कृपा से स्थापित यह मंदिर भक्ति, ज्ञान और वैराग्य का केंद्र है। हरे
                             कृष्ण आंदोलन के माध्यम से विश्व में प्रेम और शांति का प्रसार।

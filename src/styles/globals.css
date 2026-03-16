@@ -57,6 +57,16 @@ body {
         animation: float-bounce 3s ease-in-out infinite;
     }
 
+    @keyframes rotate-mandala {
+        to {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+
+    .animate-mandala {
+        animation: rotate-mandala 60s linear infinite;
+    }
+
     .bg-temple-gradient {
         background: linear-gradient(135deg, #1a0505, #5c0a0a);
     }
