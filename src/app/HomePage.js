@@ -14,6 +14,9 @@ import TempleVolunteerSection from "@/components/TempleVolunteerSection";
 import TempleConstructionSection from "@/components/TempleConstructionSection";
 import TempleLocation from "@/components/TempleLocation";
 import TempleDonation from "@/components/TempleDonation";
+import ServiceOpportunities from "@/components/ServiceOpportunities";
+import OurServices from "@/components/OurServices";
+import ContactUS from "@/components/ContactUS";
 // import About from "@/components/About";
 // import EventsSection from "@/components/EventSection";
 // import Birthday from "@/components/Birthday";
@@ -35,6 +38,9 @@ const HomePage = () => {
             <TempleConstructionSection />
             <TempleLocation />
             <TempleDonation />
+            <ServiceOpportunities />
+            <OurServices />
+            <ContactUS />
             {/* <About />
             <EventsSection />
             <Birthday />
