@@ -1,6 +1,6 @@
 "use client";
 
-const TempleCionstructionProject = () => {
+const   TempleConstructionProject = () => {
     return (
         <>
             <section
@@ -160,4 +160,4 @@ const TempleCionstructionProject = () => {
     );
 };
 
-export default TempleCionstructionProject;
+export default TempleConstructionProject;
