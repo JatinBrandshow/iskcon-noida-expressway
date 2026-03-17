@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import AnnouncementSlider from "./AnnouncementSlider";
 
 const links = [
@@ -20,16 +22,25 @@ const NavBar = () => {
     return (
         <>
             <AnnouncementSlider />
-            <nav className="bg-temple-gradient border-b-2 border-tertiary shadow-xl sticky top-0 z-50 px-[4%]">
-                <div className="max-w-325 mx-auto flex items-center justify-between">
+            <nav className="bg-white border-b-4 border-orange-500">
+                <div className="max-w-325 mx-auto flex items-center justify-between p-3">
                     {/* Logo */}
-                    <a href="/" className="flex items-center gap-2 py-3">
-                        <img
-                            src="https://iskconnoidaexpressway.com/wp-content/uploads/2020/12/ISKCON-NOIDA-Expressway-logo.png"
-                            alt="logo"
-                            className="h-12 invert sepia saturate-[4] hue-rotate-[5deg] brightness-125"
-                        />
-                    </a>
+                    <Link href="/" className="flex items-center gap-3 group">
+                            <div className="relative w-14 h-14 overflow-hidden rounded-full border-2 border-orange-100 group-hover:border-orange-500 transition-all">
+                                <Image
+                                    src="/img/logo-iskcon.webp"
+                                    alt="ISKCON Noida Logo"
+                                    fill
+                                    className="object-contain p-1"
+                                />
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="text-xl font-bold leading-none text-orange-700">ISKCON</span>
+                                <span className="text-[10px] uppercase tracking-widest text-gray-500 font-semibold">
+                                    Noida Expressway
+                                </span>
+                            </div>
+                        </Link>
 
                     {/* Desktop Links */}
                     <ul className="hidden md:flex items-center gap-1 flex-wrap">
@@ -37,7 +48,7 @@ const NavBar = () => {
                             <li key={i}>
                                 <a
                                     href={link.href}
-                                    className="text-[#FFF0A0] text-[13px] font-semibold px-3 py-2 rounded-md transition-all hover:bg-[#ffd70026] hover:text-tertiary"
+                                    className="text-secondary text-[13px] font-semibold px-3 py-2 rounded-md transition-all hover:text-orange-600"
                                 >
                                     {link.name}
                                 </a>
@@ -47,7 +58,7 @@ const NavBar = () => {
                         <li>
                             <a
                                 href="#donation"
-                                className="ml-2 px-4 py-2 text-white rounded-full bg-[linear-gradient(135deg,#ff6b00,#ff4500)] font-semibold"
+                                className="ml-2 px-4 py-2 text-white rounded-full bg-tertiary font-semibold"
                             >
                                 🙏 दान
                             </a>
@@ -69,7 +80,7 @@ const NavBar = () => {
                             <li key={i}>
                                 <a
                                     href={link.href}
-                                    className="block text-quaternary font-semibold px-3 py-2 rounded-md hover:bg-yellow-500/20"
+                                    className="block text-secondary font-semibold px-3 py-2 rounded-md hover:text-orange-600"
                                 >
                                     {link.name}
                                 </a>
@@ -79,7 +90,7 @@ const NavBar = () => {
                         <li>
                             <a
                                 href="#donation"
-                                className="block text-center mt-2 px-4 py-2 text-white rounded-full bg-linear-to-br bg-[linear-gradient(135deg,#ff6b00,#ff4500)]"
+                                className="block text-center mt-2 px-4 py-2 text-white rounded-full bg-tertiary"
                             >
                                 🙏 दान
                             </a>
