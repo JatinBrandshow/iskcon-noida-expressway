@@ -37,7 +37,7 @@ const TheHistory = () => {
                             </p>
                         </motion.div>
 
-                        <div className="relative h-[500px] flex justify-center items-center">
+                        <div className="relative h-125 flex justify-center items-center">
                             {/* Abstract "Eternal Circle" animation */}
                             <motion.div
                                 animate={{ rotate: 360 }}
