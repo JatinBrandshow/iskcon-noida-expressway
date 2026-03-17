@@ -18,7 +18,7 @@ const AboutUs = () => {
         <>
             <div className="bg-[#FFFDF9] text-stone-800 font-sans selection:bg-orange-200">
                 {/* --- GRAIN OVERLAY (Gives it a paper/organic feel) --- */}
-                <div className="fixed inset-0 pointer-events-none z-[99] opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')]" />
+                <div className="fixed inset-0 pointer-events-none z-99 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')]" />
 
                 {/* --- SECTION 1: HERO (THE SACRED PORTAL) --- */}
                 <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-[#1a1410]">
@@ -29,7 +29,7 @@ const AboutUs = () => {
                             className="w-full h-full object-cover opacity-40 scale-105"
                             alt="Temple Atmosphere"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1a1410]/60 to-[#1a1410]" />
+                        <div className="absolute inset-0 bg-linear-to-b from-transparent via-[#1a1410]/60 to-[#1a1410]" />
                     </div>
 
                     <motion.div style={{ opacity }} className="container mx-auto px-6 z-10 text-center">
@@ -73,7 +73,7 @@ const AboutUs = () => {
                             <motion.div {...sectionFade} className="relative group">
                                 {/* Decorative Frame */}
                                 <div className="absolute -inset-4 border border-orange-200/50 rounded-2xl group-hover:border-orange-400 transition-colors duration-500" />
-                                <div className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-2xl">
+                                <div className="relative aspect-3/4 overflow-hidden rounded-xl shadow-2xl">
                                     <img
                                         src="https://images.unsplash.com/photo-1590059391054-73899f899986?auto=format&fit=crop&q=80"
                                         className="w-full h-full object-cover grayscale-[0.2] transition-transform duration-[2s] group-hover:scale-110"

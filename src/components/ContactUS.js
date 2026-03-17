@@ -59,7 +59,7 @@ const contactItems = [
 const ContactUS = () => {
     return (
         <>
-            <section id="contact" className="py-[70px] px-[4%] bg-[linear-gradient(180deg,#FFF8E7,#FFE4B5)]">
+            <section id="contact" className="py-17.5 px-[4%] bg-[linear-gradient(180deg,#FFF8E7,#FFE4B5)]">
                 <div className="max-w-[1300px] mx-auto">
                     {/* Header */}
                     <div className="text-center mb-[45px]">
@@ -69,7 +69,7 @@ const ContactUS = () => {
 
                         <h2 className="text-primary text-[clamp(1.3rem,2.8vw,2.2rem)] font-bold">संपर्क करें</h2>
 
-                        <div className="w-[70px] h-[3px] bg-[linear-gradient(90deg,#FF6B00,#FFD700)] mx-auto mt-2 rounded"></div>
+                        <div className="w-17.5 h-[3px] bg-[linear-gradient(90deg,#FF6B00,#FFD700)] mx-auto mt-2 rounded"></div>
                     </div>
 
                     {/* Grid */}
